@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { AnimatedLayoutWrapper } from "@/components/AnimatedLayoutWrapper";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        <AnimatedLayoutWrapper>{children}</AnimatedLayoutWrapper>
       </body>
     </html>
   );

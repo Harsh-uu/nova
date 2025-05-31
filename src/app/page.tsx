@@ -1,3 +1,5 @@
+"use client"
+
 import { BlurSection } from "@/components/blur/blur-section";
 import { CommunitySection } from "@/components/community/community-section";
 import { ConvoSection } from "@/components/conversation/convo-section";
