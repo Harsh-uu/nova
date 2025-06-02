@@ -3,13 +3,9 @@ import { motion } from "framer-motion";
 
 export const NewSection = () => {
   return (
-    <motion.div 
+    <div 
       id="new-section" 
       className="bg-[#ffb3c6] py-10 md:py-20 px-4 sm:px-10"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.8 }}
     >
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
             <motion.div 
@@ -55,9 +51,8 @@ export const NewSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <Image className="h-auto w-full rounded-2xl max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl" src="/new-model.png" alt="model" width={500} height={420}/>
-            </motion.div>
+              <Image className="h-auto w-full rounded-2xl max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl" src="/new-model.png" alt="model" width={500} height={420}/>            </motion.div>
         </div>
-    </motion.div>
+    </div>
   );
 };

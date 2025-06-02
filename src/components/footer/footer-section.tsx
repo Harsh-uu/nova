@@ -50,26 +50,26 @@ export const FooterSection = ({bgColor}:Props) => {
           </Link>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 mt-6 md:mt-10 w-full sm:w-auto max-w-md sm:max-w-none">
-          <div className="flex gap-2 group cursor-pointer hover:bg-black border-2 w-56 md:w-48 lg:w-48 xl:w-56 mx-auto items-center px-2 py-2 rounded-lg">
-            <Image
+          <div className="flex gap-2 group cursor-pointer hover:bg-black border-2 w-56 md:w-48 lg:w-48 xl:w-56 mx-auto items-center px-2 py-2 rounded-lg">            <Image
               src="/play-store.png"
               alt="playstore"
               width={40}
               height={30}
-              className="object-contain md:size-6 lg:size-8 xl:size-10"
+              style={{ width: "auto", height: "auto" }}
+              className="object-contain md:w-6 lg:w-8 xl:w-10"
             />
             <div>
               <p className="text-sm md:text-xs group-hover:text-white">Get it on</p>
               <p className="font-semibold md:text-sm group-hover:text-white">Google Play Store</p>
             </div>
           </div>
-          <div className="flex gap-2 group cursor-pointer hover:bg-black border-2 w-56 md:w-48 lg:w-48 xl:w-56 mx-auto items-center px-2 py-2 rounded-lg">
-            <Image
+          <div className="flex gap-2 group cursor-pointer hover:bg-black border-2 w-56 md:w-48 lg:w-48 xl:w-56 mx-auto items-center px-2 py-2 rounded-lg">            <Image
               src="/app-store.png"
               alt="appstore"
               width={40}
               height={30}
-              className="object-contain md:size-6 lg:size-8 xl:size-10 group-hover:invert"
+              style={{ width: "auto", height: "auto" }}
+              className="object-contain md:w-6 lg:w-8 xl:w-10 group-hover:invert"
             />
             <div>
               <p className="text-sm md:text-xs group-hover:text-white">Get it on</p>

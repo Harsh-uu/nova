@@ -18,11 +18,10 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
+}>) {  return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased flex flex-col min-h-screen`}
+        className={`${poppins.className} antialiased flex flex-col min-h-screen overflow-x-hidden`}
       >
         <AnimatedLayoutWrapper>{children}</AnimatedLayoutWrapper>
       </body>
